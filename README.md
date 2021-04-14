@@ -67,6 +67,10 @@ NOTE:
 - Send a command in your server/Bot DM. Example: `BOT_COMMAND tinder meme`, where `<BOT_COMMAND>` is the command stored in the `.env` file (like `!fs`).
 - The bot will send any random file from your selected folder that contains these keywords.
 
+## Customization
+- `phrases.json` is a set of reply messages. The bot will use one of these in standard replies.
+- `errors.json` is a set of error messages. The bot will use one of these if the command is incorrect or the requested file(s) is/are missing.
+
 ## Tech Stack
 
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
