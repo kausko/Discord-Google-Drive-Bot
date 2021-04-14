@@ -1,0 +1,20 @@
+{
+  "name": "Discord-Google-Drive-Bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that pulls media from your Google Drive",
+  "main": "index.js",
+  "repository": "https://github.com/kausko/Discord-Google-Drive-Bot.git",
+  "author": "kausko <kausko@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "googleapis": "39",
+    "node-fetch": "^2.6.1",
+    "open": "^8.0.5"
+  },
+  "scripts": {
+    "start": "node .",
+    "generate": "node token.js"
+  }
+}
