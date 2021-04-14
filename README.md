@@ -23,7 +23,7 @@ As the bot deals with Google OAuth and requires access to sensitive `scopes`, I 
 1. Run `yarn generate` in the base directory of the project. This step should open a link in your browser
 1. Select the Google Account associated with your drive
 1. This will take you to an OAuth consent screen. Click on `show advanced` and `Go to <app-name> (unsafe)`<sup>#</sup>
-1. Paste the generated code in the terminal from step 4
+1. Paste the generated code in the terminal from step 5
 1. The script will generate the tokens, test them and save them in `token.json`
 
 *<sup>#</sup> This appears if GCP app requires access to sensitive scopes and the OAuth consent screen is not approved by Google. As this is your own app, you don't need to worry about this.*
