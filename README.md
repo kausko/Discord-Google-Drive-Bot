@@ -2,6 +2,8 @@
 
 A Discord bot that pulls media from your Google Drive, and sends it to your servers. You can also DM the bot!
 
+The link in the description points to a private bot, and is only meant for demonstration purposes. You need to [Setup](https://github.com/kausko/Discord-Google-Drive-Bot#setup) your own bot to try it out.
+
 ## Setup
 As the bot deals with Google OAuth and requires access to sensitive `scopes`, I have not deployed it as a customizable public bot. The server admins must deploy it themselves.
 
@@ -61,7 +63,7 @@ NOTE:
 - This can be fixed using workers or cron jobs, but you may run out of your monthly limits.
 
 ## Usage
-- Head over to your deployment url, or `localhost:3000` , or open `https://discord.com/oauth2/authorize?client_id=APP_ID&scope=bot` and replace the `APP_ID` with your Discord Application ID
+- Head over to your deployment url, (or `localhost:3000`, when testing) or open `https://discord.com/oauth2/authorize?client_id=APP_ID&scope=bot` and replace the `APP_ID` with your Discord Application ID
 - Login to Discord and add the bot to your server. If the bot is private, only the owner of the bot can do this.
 - Add files in your selected drive folder with keywords in the file name. Example: `tinder meme 2020.png`
 - Send a command in your server/Bot DM. Example: `BOT_COMMAND tinder meme`, where `<BOT_COMMAND>` is the command stored in the `.env` file (like `!fs`).
