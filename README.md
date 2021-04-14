@@ -28,6 +28,36 @@ As the bot deals with Google OAuth and requires access to sensitive `scopes`, I 
 
 *<sup>#</sup> This appears if GCP app requires access to sensitive scopes and the OAuth consent screen is not approved by Google. As this is your own app, you don't need to worry about this.*
 
+`credentials.json` format
+
+```json
+{
+  "installed": {
+      "client_id": "<client-id>.apps.googleusercontent.com",
+      "project_id": "<project-name>-<project-id>",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_secret": "<client-secret>",
+      "redirect_uris": [
+          "abc:defg:hi:oauth:2.0:jkl",
+      ]
+  }
+}
+```
+
+`token.json` format
+
+```json
+{
+  "access_token": "<access-token>",
+  "refresh_token": "<refresh-token>",
+  "scope": "https://www.googleapis.com/auth/drive",
+  "token_type": "Bearer",
+  "expiry_date": "time-in-ms-since-epoch"
+}
+```
+
 ### Discord Bot setup
 
 1. [Create a Discord Application](https://discord.com/developers/applications)
