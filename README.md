@@ -22,7 +22,7 @@ As the bot deals with Google OAuth and requires access to sensitive `scopes`, I 
 1. Select the Google Account associated with your drive
 1. This will take you to an OAuth consent screen. Click on `show advanced` and `Go to <app-name> (unsafe)`<sup>#</sup>
 1. Paste the generated code in the terminal from step 4
-1. Your tokens will be saved in `token.json`
+1. The script will generate the tokens, test them and save them in `token.json`
 
 *<sup>#</sup> This appears if GCP app requires access to sensitive scopes and the OAuth consent screen is not approved by Google. As this is your own app, you don't need to worry about this.*
 
@@ -45,7 +45,7 @@ FOF=https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcd
 
 | Variable | Description |
 | --- | --- |
-| `DRIVE_DIR` | <li>The Drive ID of the folder where your media is stored</li><li>It is visible in the final part of the URI, when the folder is opened in a browser</li><li>Optionally, you can set it to `root`. </li><li>This is NOT RECOMMENDED as it allow server members to access your entire drive.</li> |
+| `DRIVE_DIR` | <li>The Drive ID of the folder where your media is stored</li><li>It is visible in the final part of the URI, when the folder is opened in a browser</li><li>Optionally, you can set it to `root`. </li><li>This is NOT RECOMMENDED as it will allow server members to access your entire drive.</li> |
 | `APP_ID` | The Application ID of your Discord Application |
 | `BOT_TOKEN` | The authorization token of your Discord Application's Bot
 | `BOT_NAME` | The name of your bot |
